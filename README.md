@@ -65,5 +65,6 @@ npm run build
 - GitHub: https://github.com/kangmin5820/posit
 - 개발 단계 및 검증: [DEVELOPMENT.md](./DEVELOPMENT.md)
 - Vercel: https://posit-pi.vercel.app/
+- Google Sheets (공개 보기): https://docs.google.com/spreadsheets/d/1gatFK8pWLbrH_UlJrzMC4TTLOGlxXI5qzjy_YiRwzFY/edit?usp=drivesdk
 
 이메일 제목: `[AI코딩] 202202056 이강민`
