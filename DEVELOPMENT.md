@@ -25,7 +25,7 @@ Next.js 기반 반응형 포스트잇 보드를 구현했다. 메모는 노랑·
 POST는 행 추가, GET은 읽기, PUT은 내용·완료 수정, DELETE는 해당 행 삭제, PATCH는 순서 변경을 수행한다. 날짜는 시간대 변환에 안전한 ISO 문자열로 저장하고 화면에서 한국어 날짜·시간으로 표시한다.
 
 ## 5. 실행과 배포
-1. 프로젝트 루트 `app` 폴더에 `.env.local`을 둔다. `.env.example`의 세 가지 Google 값을 입력한다.
+1. 프로젝트 루트(package.json이 있는 폴더)에 `.env.local`을 둔다. `.env.example`의 세 가지 Google 값을 입력한다.
 2. Google Cloud 프로젝트에서 Sheets API를 활성화하고 대상 시트를 서비스 계정 이메일에 편집자로 공유한다.
 3. `npm install`, `npm run dev`로 실행한다.
 4. 푸터에 이강민을 표시한다. NEXT_PUBLIC_AUTHOR_NAME으로 이름을 재정의할 수 있다.
@@ -45,7 +45,7 @@ POST는 행 추가, GET은 읽기, PUT은 내용·완료 수정, DELETE는 해�
 
 - 학번 / 이름: 202202056 이강민
 - GitHub 링크: https://github.com/kangmin5820/posit
-- Vercel 링크: 배포 후 작성
+- Vercel 링크: https://posit-pi.vercel.app/
 - Google Sheets 공개 링크: 공유 설정 후 작성
 - 제출물: 이 개발 문서와 위 3개 링크
 
@@ -56,9 +56,9 @@ POST는 행 추가, GET은 읽기, PUT은 내용·완료 수정, DELETE는 해�
 - npm run build: 통과 (TypeScript 및 프로덕션 페이지 생성 포함)
 - 실제 Google Sheets: 생성, 수정, 완료 처리, 순서 저장, 재조회, 삭제 통과
 - 임시 테스트 메모: 삭제 완료
-- 브라우저 도구가 시간 초과되어 화면 배치와 실제 모바일 터치 드래그의 시각 검증은 미완료
+- 배포 화면의 작성자 표시와 390px 모바일 가로 넘침 없음 확인. 실제 모바일 기기 터치 드래그 검증은 미완료
 - GitHub 저장소: https://github.com/kangmin5820/posit
-- Vercel 배포: 진행 중
+- Vercel 배포: https://posit-pi.vercel.app/ (프로덕션 빌드 성공)
 
 ## 9. 제출용 정리
 - 작성자: 202202056 이강민
@@ -66,3 +66,10 @@ POST는 행 추가, GET은 읽기, PUT은 내용·완료 수정, DELETE는 해�
 - 미사용 의존성 @hello-pangea/dnd, clsx, framer-motion, googleapis, tailwind-merge를 제거했다.
 - 기본 README를 실행·Google Sheets 설정·Vercel 배포 안내로 교체했다.
 - .env.local, 비밀키, node_modules, .next는 업로드에서 제외했다.
+
+## 10. Vercel 프로덕션 검증
+- 2026-10-22: posit 프로젝트 생성 및 프로덕션 배포 완료
+- 서버 환경변수 GOOGLE_SHEET_ID, GOOGLE_CLIENT_EMAIL, GOOGLE_PRIVATE_KEY를 민감정보로 등록
+- 배포된 API에서 읽기, 생성, 내용 수정, 완료 처리, 순서 저장, 재조회 및 삭제 통과
+- 검증용 임시 메모 삭제 완료
+- 화면 제목 Post-it Todo List와 푸터 이강민 표시 확인

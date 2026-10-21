@@ -4,6 +4,8 @@
 
 작은 생각과 할 일을 붙여두는 Next.js 포스트잇 보드입니다. Google Sheets에 메모를 저장합니다.
 
+배포 주소: https://posit-pi.vercel.app/
+
 ## 기능
 
 - 메모 작성, 편집, 삭제 및 완료 표시
@@ -62,6 +64,6 @@ npm run build
 - 학번 / 이름: 202202056 이강민
 - GitHub: https://github.com/kangmin5820/posit
 - 개발 단계 및 검증: [DEVELOPMENT.md](./DEVELOPMENT.md)
-- Vercel 및 실제 시트 링크: 배포·공유 설정 후 개발 보고서에 기재합니다.
+- Vercel: https://posit-pi.vercel.app/
 
 이메일 제목: `[AI코딩] 202202056 이강민`
