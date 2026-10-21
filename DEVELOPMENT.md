@@ -46,7 +46,7 @@ POST는 행 추가, GET은 읽기, PUT은 내용·완료 수정, DELETE는 해�
 - 학번 / 이름: 202202056 이강민
 - GitHub 링크: https://github.com/kangmin5820/posit
 - Vercel 링크: https://posit-pi.vercel.app/
-- Google Sheets 공개 링크: 공유 설정 후 작성
+- Google Sheets 공개 링크: https://docs.google.com/spreadsheets/d/1gatFK8pWLbrH_UlJrzMC4TTLOGlxXI5qzjy_YiRwzFY/edit?usp=drivesdk
 - 제출물: 이 개발 문서와 위 3개 링크
 
 공지에 적힌 마감은 2026년 10월 21일 24시이며 현재 작업일은 2026년 10월 22일이다. 제출 가능 여부는 담당자에게 확인해야 한다. 이메일은 자동 발송하지 않았다.
@@ -73,3 +73,8 @@ POST는 행 추가, GET은 읽기, PUT은 내용·완료 수정, DELETE는 해�
 - 배포된 API에서 읽기, 생성, 내용 수정, 완료 처리, 순서 저장, 재조회 및 삭제 통과
 - 검증용 임시 메모 삭제 완료
 - 화면 제목 Post-it Todo List와 푸터 이강민 표시 확인
+
+## 11. 시트 공개 링크
+- Post-it Todo List DB의 일반 액세스를 링크가 있는 모든 사용자: 뷰어로 설정했다.
+- Drive 메타데이터에서 anyone / reader / allowFileDiscovery=false를 확인했다.
+- 기존 소유자와 앱 서비스 계정의 편집 권한은 유지했다.
